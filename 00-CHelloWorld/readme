@@ -126,7 +126,7 @@ Usuario/
   - Al escribir make run en la Terminal Bash (MSY52) ( Version 13.3.0), se ejecuta el programa con la salida standard por terminal : "Hello   World! " 
   
 # Conclusiones
-- El compilador GCC 13.2.0 se ha configurado correctamente.
+- Los compiladores GCC 15.1.0 / GCC 13.3.0 se han configurado correctamente.
 - Se ha compilado un programa en C utilizando el estándar C23.
 - El programa fue ejecutado con éxito y su salida fue redirigida y verificada.
 - Por ultimo ,se valida la preparación del entorno para futuros desarrollos en C.
