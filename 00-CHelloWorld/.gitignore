@@ -1,0 +1,5 @@
+# Ignorar archivos ejecutables y temporales
+*.exe
+*.o
+*.out
+*~

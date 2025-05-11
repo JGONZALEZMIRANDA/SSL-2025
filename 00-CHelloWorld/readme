@@ -1,1 +1,137 @@
 
+# Autor :
+
+- Usuario de GITHUB : JGONZALEZMIRANDA
+- Legajo : 213.765-3
+- Nombres : Jose Rafael
+- Apellidos : Gonzalez Miranda
+
+# Titulo TP : " "Hello, World!" en C" 
+
+# Enunciado
+
+# Trabajo Práctico 00 - Hello World
+
+## Objetivos
+
+- Demostrar capacidad para editar, compilar y ejecutar programas C mediante el desarrollo de un programa simple.
+- Tener un primer contacto con las herramientas necesarias para abordar la resolución de los trabajos posteriores.
+- Creación de repositorio personal git.
+- Armado de equipo de trabajo.
+
+## Temas
+
+- Sistema de control de versiones.
+- Lenguaje de programación C.
+- Proceso de compilación.
+- Pruebas.
+
+## Problema
+
+Adquirir y preparar los recursos necesarias para resolver los trabajos del curso.
+
+## Restricciones
+
+- Usar la versión **C23** del lenguaje C (también aceptables: C11 o C17).
+
+## Tareas
+
+1. **Cuenta en GitHub**
+   - Crear una cuenta GitHub.
+   - Asociar email @frba y verificarlo.
+   - Hacer el email @frba público (o dejarlo privado luego de la invitación).
+
+2. **Repositorio público para la materia**
+   - Crear un repositorio llamado `SSL`.
+   - En la raíz: archivo `readme.md` como front page del repositorio.
+   - Crear carpeta `00-CHelloWorld`.
+   - En esa carpeta: `readme.md` como front page del trabajo.
+
+3. **Compilador**
+   - Instalar un compilador que soporte C23 (también se aceptan C11 o C17).
+   - Indicar en el `readme.md`:
+     - Compilador seleccionado
+     - Versión del compilador
+     - Versión de C soportada
+   - Probar el compilador con un programa `hello.c` que imprima "Hello, World!".
+   - Redireccionar la salida a `output.txt` y verificar su contenido.
+
+4. **Publicación**
+   - Subir al repositorio `SSL` la carpeta `00-CHelloWorld` con:
+     - `readme.md`
+     - `hello.c`
+     - `output.txt`
+
+5. **Armado de equipo**
+   - Informar el número de equipo para que la cátedra envíe la invitación al repositorio grupal.
+   - Aceptar la invitación. (Luego, opcionalmente cambiar visibilidad del email.)
+
+## Productos esperados
+
+```
+Usuario/
+└── SSL/
+    ├── readme.md
+    └── 00-CHelloWorld/
+        ├── readme.md
+        ├── hello.c
+        └── output.txt
+```
+# Herramientas utilizadas
+
+ ## A Compilador Seleccionado
+    -**GCC** (GNU Compiler Collection)
+
+ ## B Version del Compilador
+    - Desde la Terminal de Bash : gcc.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r1) 15.1.0
+    Copyright (C) 2025 Free Software Foundation, Inc.
+    - Desde la Terminal Bash (MSY52) para poder ejecutar el Makefile : gcc (GCC) 13.3.0
+    Copyright (C) 2023 Free Software Foundation, Inc.
+
+## C Version del Lenguaje Compilada
+    - Desde la Terminal de Bash  ( Version 15.1.0): gcc -std=c23 Hello.c -o Hello
+    - Desde la Terminal Bash (MSY52) ( Version 13.3.0) si usamos make :cc -std=c2x Hello.c -o Hello
+  
+# Compilación y ejecución paso a paso
+ ## Crear el archivo Hello.C
+ - #include <stdio.h>
+
+    int main() {
+    
+        printf("Hello World!\n");
+    
+        return 0;
+    }
+
+ ## Compilar el programa usando el estardar C23
+ - Se ejecuto en la terminal de Bash el comando : gcc -std=c23 Hello.c -o Hello
+ - Este comando le dice al compilador que utilice el estándar C23 para compilar el archivo hello.c y generar el ejecutable hello.exe
+ - El archivo .exe se genero satisfactoriamente.
+  
+ ## Ejecutar el Programa
+ - Se ejecuto en la terminal de Bash el comando :./hello
+ - Verificandose  que el programa imprime correctamente la línea esperada en la consola : "Hello World!"
+  
+ ## Redirigir la salida a un archivo output.txt
+ - Se ejecuto en la terminal de Bash el comando :./hello > output.txt
+ - Este comando ejecuta el programa y redirige su salida estándar al archivo output.txt.
+ - El archivo output.txt se genero satisfactoriamente.
+  
+ ## Como verificacion adicional : Verificar el contenido del archivo output.txt
+ - Se ejecuto en la terminal de Bash el comando :cat output.txt
+ - Se verifica que la salida : "Hello World! ", fue escrita correctamente al archivo output.txt.
+
+  ## Compilar y Ejecutar el programa usando Makefile
+  - Al escribir make en la Terminal Bash (MSY52) ( Version 13.3.0), se compila ejecutando la instruccion : -std=c2x Hello.c -o Hello , compilando en el standard C23
+  - Al escribir make run en la Terminal Bash (MSY52) ( Version 13.3.0), se ejecuta el programa con la salida standard por terminal : "Hello   World! " 
+  
+# Conclusiones
+- El compilador GCC 13.2.0 se ha configurado correctamente.
+- Se ha compilado un programa en C utilizando el estándar C23.
+- El programa fue ejecutado con éxito y su salida fue redirigida y verificada.
+- Por ultimo ,se valida la preparación del entorno para futuros desarrollos en C.
+
+# Se Crearon los archivos Makefile  y  .gitignore
+- Aunque no esta pedido para este TP, se crearon los archivos Makefile y .gitignore para comenzar a familiarizarme con el tema.
+- El gitignore evita que el archivo Hello.exe suba al repositorio en GITHUB ya que no es parte de lo pedido en la consigna de este TP
+- El Archivo Makefile agiliza la compilacion y ejecucion del programa.
